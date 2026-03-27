@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navegação</title>
+
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    header {
+        background-color: #0f172a;
+        color: white;
+        padding: 20px 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+
+    }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bolder;
+            letter-spacing: 1px;
+
+        }
+
+        nav ul{
+            list-style: none;
+            display: flex;
+            gap: 30px;
+
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            position: relative;
+            transition: 0.3s;
+
+        }
+
+        nav a:hover {
+            color: #2a0f10;
+        }
+
+        nav a::after{
+            content:"";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0%;
+            height: 2px;
+            background-color: #2a0f10;
+            transition: 0.3s;
+
+        }
+        nav a:hover::after {
+            width: 100%;
+        }
+
+    </style>
+ </head>
+
+ <body>
+    <header>
+        <div class="logo">
+            EE PAULO MENDES SILVA
+        </div>
+    
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+ </body>
+</html>
