@@ -58,3 +58,53 @@ header {
     nav a:hover::after {
         width: 100%;
     }
+    
+
+/* Estilo geral da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #7681aa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Seções como caixas */
+section {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+    border-radius: 10px;
+
+    /* SOMBRA */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+h1, h2 {
+    color: #ffffff;
+}
+
+/* Rodapé */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+
+/* Seções dentro do footer (também em caixas) */
+footer section {
+    background-color: #34495e;
+    margin: 10px 0;
+    box-shadow: none; /* opcional: tira sombra no rodapé */
+}
